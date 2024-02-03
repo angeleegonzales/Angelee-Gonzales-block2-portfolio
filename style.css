@@ -91,7 +91,7 @@ section{
 	display: flex;
 	align-items: center;
 	min-height: 100vh;
-	background: url(Home_bg.png) no-repeat;
+	background: url(Home_img.png) no-repeat;
 	background-size: cover;
 }
 
