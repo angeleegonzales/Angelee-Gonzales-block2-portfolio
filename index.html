@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portfolio</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <style>
+        table, th, td {
+    border: 1px solid #eee;
+    }
+    </style>
+</head>
+
+<header class="header">
+
+    <a href="index.html" class="logo">
+        <img src="Logo.png" alt="">    
+    </a>
+
+    <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#updates">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+</header>
+
+
+<section class="home" id="home">
+    <div class="homebg">
+        <img src="home_img.png" alt="">
+    </div>
+
+    <div class="content">
+        <span>Hello,</span>
+        <h3>I'm Angelee !</h3>
+        <p>A spirited <b>front-end developer</b> with a passion for creating captivating<br>online experiences. Armed with a love for design and a knack for coding,<br> I specialize in turning imaginative concepts into visually stunning and<br>user-friendly websites. Proficient in HTML, CSS, and JavaScript, I bring<br> a blend of creativity and technical expertise to every project, ensuring not<br>only functionality but also an aesthetic appeal that leaves a lasting<br> impression.</p>
+        <a href="#about" class="btn1">Read More</a>
+    </div>
+</section>
+
+<section class="about" id="about">
+    
+    <h1 class="heading"> <span>About</span> Me </h1>
+
+    <div class="row">
+        <div class="image-container">
+            <img src="formal.jpg">
+        </div>
+
+        <div class="content">
+            <p>My journey in the world of front-end development is driven by a commitment to continuous<br>learning and staying ahead of industry trends. I thrive on the challenge of translating ideas<br> into responsive designs that seamlessly adapt to various devices. Whether it's crafting pixel-<br>perfect layouts or optimizing user interfaces, I take pride in delivering not just code, but a<br>polished and engaging online presence. Let's collaborate to bring your digital vision to life –<br> one line of code at a time!</p>
+            <a href="#contact" class="btn2">Learn more</a>
+        </div>
+
+</section>
+
+
+<section class="updates" id="updates">
+
+    <h1 class="heading">My<span> Projects</span></h1>
+
+    <div class="article">
+        <div class="image">
+            <img src="img-1.png" alt="">
+
+            <div class="icons">
+                    <a href="article1.html" class="read-btn">Read More</a>
+            </div>
+        </div>
+
+        <div class="content">
+            <h3>Healthcare Website: Mortar and Pestle</h3>
+
+            <div class="date">
+                <p>May 2023</p>
+            </div>
+
+            <div class="mins"> 
+                <a href="#" class="fas fa-clock"></a> 
+                5 mins. read 
+            </div>
+
+            <p>Discover a world of wellness on our healthcare website, offering expert insights and resources for your<br>holistic health.</p>
+        </div>
+
+        <div class="image">
+            <img src="img-2.png" alt="">
+
+            <div class="icons">
+                    <a href="article2.html" class="read-btn">Read More</a>
+            </div>
+        </div>
+
+        <div class="content">
+            <h3>Food Website: Mangan</h3>
+
+            <div class="date">
+                <p>2024 (On going)</p>
+            </div>
+
+            <div class="mins"> 
+                <a href="#" class="fas fa-clock"></a> 
+                5 mins. read 
+            </div>
+
+            <p>Elevate your dining with ease through our intuitive food ordering platform, where a world of flavors a-<br>waits a your fingertips.</p>
+        </div>
+
+        <div class="image">
+            <img src="img-3.jpg" alt="">
+
+            <div class="icons">
+                    <a href="article3.html" class="read-btn">Read More</a>
+            </div>
+        </div>
+
+        <div class="content">
+            <h3>Rent A Car: Wheel Wander</h3>
+
+            <div class="date">
+                <p>November 2023</p>
+            </div>
+
+            <div class="mins"> 
+                <a href="#" class="fas fa-clock"></a> 
+                5 mins. read 
+            </div>
+
+            <p>Unlock the freedom to travel on your terms – our rent-a-car application simplifies the rental process, p<br>utting your dream ride just a tap away.</p>
+        </div>
+
+        
+    </div>
+
+<section class="contact" id="contact">
+
+    <h1 class="heading"> <span> Contact </span>Info</h1>
+
+    <div class="row">
+        <form action="">
+            <input type="text" placeholder="Name" class="box">
+            <input type="email" placeholder="Email" class="box">
+            <input type="number" min="0" max="9" maxlength="11" placeholder="Number" class="box">
+            <textarea name="" class="box" placeholder="Message" id="" cols"30" rows="10"></textarea>
+            <input type="submit" value="send message" class="btn3" onclick="openPopup()">
+        </form>
+
+        <div class="image">
+            <img src="contact.png" alt="">
+        </div>
+
+        <div class="popup" id="popup">
+            <h3>Message sent!</h3>
+            <p>Your concern has been successfully submitted. Thank you!</p>
+            <button type="button" onclick="closePopup()">Ok</button>
+        </div>
+    </div>
+
+<script> 
+
+    document.querySelectorAll('input[type="number"]').forEach(input => {
+        input.oninput = () =>{
+            if(input.value.length > input.maxLength) input.value = input.value.slice(0, input.maxLength);
+        };
+    });
+
+</script>
+
+<script>
+    let popup = document.getElementById("popup");
+function openPopup(){
+    popup.classList.add("open-popup");
+}
+
+function closePopup(){
+    popup.classList.remove("open-popup");
+}
+
+</script>
+
+
+
+</section>
+
+<section class="footer">
+
+    <div class="box-container">
+        <div class="box">
+            <h3>Quick Links</h3>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#updates">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <div class="box">
+            <h3>Projects</h3>
+            <img src="img-1.png" width="100" height="80" alt="">
+            <p>Healthcare Website:<br> Mortar&Pestle</p>
+            <a href="article1.html" class="btnf1">Read More</a>
+
+            <img src="img-2.png" width="100" height="75" alt="">
+            <p>Food Website: <br>Mangan</p>
+            <a href="article2.html" class="btnf2">Read More</a>
+        </div>
+
+        <div class="box">
+            <h3>Contact Info</h3>
+            <a href="#">+639473365786</a>
+            <a href="#">gonzalesangeleea@gmail.com</a>
+            <a href="#">Dagupan City, Philippines</a>
+        </div>
+    </div>
+
+        <div class="credit"> Developed by <span> Gonzales </span> ┃ All rights reserved </div>
+    </section>
+
+
+</html>
